@@ -10,7 +10,7 @@
 
 **2. Input the needed information:**
 * **MAL Username:** *( Your username in MyAnimeList )*
-* **Access Token:** *( [OAuth Token](https://myanimelist.net/blog.php?eid=835707) from MyAnimeList )*
+* **Access Token:** *( [OAuth Token](https://myanimelist.net/blog.php?eid=835707) from MyAnimeList or use `token.txt` )*
 * **Anime Genre:** *( A genre of your choice for the pie graph )*
 * **Pie Graph Color:** *( Choice of color for the pie graph )*
 

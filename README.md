@@ -20,3 +20,16 @@
 
 ## Error:
 *If an error pop-up showed up make sure to re-submit the information. If it is still occurring, make sure to check if the inputs have the accurate username and token.*
+
+## Important:
+*MyAnimeList API that I used in this program:*
+
+* **[MyAnimeList Official API V2](https://myanimelist.net/apiconfig/references/api/v2)**
+
+* **[Jikan API V4](https://github.com/jikan-me/jikan)**
+
+*Important links to visit to generate the access token. Both links are works by ZeroCrystal from MyAnimeList API:*
+
+* **[Authorisation flow for the new MAL API using OAuth 2.0](https://myanimelist.net/blog.php?eid=835707)**
+
+* **[How to generate an Access Token using the new MyAnimeList's API](https://gitlab.com/-/snippets/2039434)**

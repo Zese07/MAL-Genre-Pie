@@ -4,18 +4,21 @@ from tkinter import ttk
 import requests
 
 
-def error():
+def pop_up(number):
     popup = tk.Toplevel()
-    popup.title("Error")
+
+    popup.title("Error" if number == 0 else "Done")
+
     popup.geometry("200x50+{}+{}".format(window.winfo_rootx() + window.winfo_width() // 2 - 110,
                                          window.winfo_rooty() + window.winfo_height() // 2 - 50))
     popup.iconbitmap('icon.ico')
     popup.resizable(False, False)
 
-    text = tk.Label(popup, text="Unexpected error occurred.")
+    text = tk.Label(popup, text="Unexpected error occurred." if number == 0 else "Pie graph successfully created.")
+
     text.pack()
 
-    popup.after(1000, popup.destroy)
+    popup.after(1000 if number == 0 else 3000, popup.destroy)
 
 
 def tier(percent):
@@ -52,6 +55,8 @@ def pie_chart(total, watching, completed, on_hold, dropped, plan_to_watch, genre
     pie.axis('equal')
 
     plt.savefig('pie.png')
+
+    pop_up(1)
 
 
 def pie_color(color):
@@ -137,7 +142,7 @@ def submit():
                 pie_chart(total, watching, completed, on_hold, dropped, plan_to_watch, genre_name, percent, center, color)
 
     except Exception:
-        error()
+        pop_up(0)
 
 
 window = tk.Tk()
